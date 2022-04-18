@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+html {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+}
+header {
+  background: url(images/banner.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  position: absolute;
+  top: 20px;
+  height: 45px;
+  width: 100%;
+}
+nav .icon img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav .icon {
+  display: flex;
+  align-items: center;
+  color: #fed00d;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+nav .menu .flix ul {
+  display: none;
+  color: #fff;
+}
+nav .menu img {
+  width: 45px;
+  height: 40px;
+  margin-right: 20px;
+}
+nav .menu {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.container .online {
+  position: absolute;
+  top: 200px;
+  left: 35px;
+}
+.container .online h3 {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.container .online h1 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 700;
+}
+.container .online h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #cd8383;
+}
+.container .online .btn,
+.button .btn,
+.list3 .btn {
+  color: rgb(44, 43, 43);
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  transition: all 0.6s ease;
+}
+.container .online .btn:hover,
+.button .btn:hover {
+  background-color: black;
+  color: #fff;
+}
+.quality {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 60px;
+}
+.quality .qualityinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quality .qualityinfo h2 {
+  color: #ecc30d;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.quality .qualityinfo p {
+  color: rgb(206, 199, 199);
+  font-size: 1rem;
+  line-height: 20px;
+}
+.fig {
+  width: 100%;
+  background: url(images/sep.png) center center;
+  padding: 50px 0;
+}
+.fig .visit {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+.fig .visit h1 {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.models {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.models .modelsinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.models .modelsinfo figure {
+  margin-left: 10px;
+}
+.models .modelsinfo figcaption {
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  color: black;
+}
+.models .modelsinfo figure .card {
+  position: relative;
+  background-color: black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.models .modelsinfo figure .card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.models .modelsinfo figure .card h5 {
+  color: #ecc30d;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+.models .modelsinfo figure .card p {
+  color: rgb(206, 199, 199);
+  font-size: 0.8rem;
+  line-height: 18px;
+  padding: 0 12px;
+}
+.models .modelsinfo figure .card span {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  padding: 10px 13px;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.arrivals {
+  width: 100%;
+  background-color: black;
+  padding: 70px 0;
+}
+.arrivalsinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrivalsinfo h1 {
+  font-size: 2.3rem;
+  color: #ecc30d;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.arrivalsinfo .cards img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.order {
+  width: 100%;
+  background: url(images/sep.png) center center;
+  padding: 30px 0px;
+}
+.order .orderinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.order .orderinfo .heading h4 {
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.order .orderinfo .heading h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 35px;
+  text-transform: initial;
+}
+.achieve {
+  width: 100%;
+  padding: 50px 0;
+  background-color: black;
+}
+.achieve .achieveinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.achieve .achieveinfo h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+.achieve .achieveinfo p {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+.achieve .achieveinfo .tower img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.achieve .achieveinfo .tower .numbers {
+  margin-top: 40px;
+}
+
+.achieve .achieveinfo .tower .numbers h3 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.achieve .achieveinfo .tower .numbers h4 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.achieve .achieveinfo .tower .numbers h5 {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+.contact {
+  width: 100%;
+  background: linear-gradient(rgba(9, 65, 82, 0.5), rgba(9, 65, 82, 0.5)),
+    url(images/contactus.jpg) center center no-repeat;
+  padding: 30px 0;
+  border-bottom: #ecc30d 11px solid;
+}
+.contact .contactinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .contactinfo .contactus {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact .contactinfo .contactus h2 {
+  color: #ecc30d;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.contact .contactinfo .contactus p {
+  color: #fff;
+  line-height: 25px;
+  font-size: 1rem;
+  margin-bottom: 35px;
+}
+.contact .contactinfo .contactform {
+  border: thin solid #ecc30d;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 3px 3px 10px #ecc30d, -3px -3px 10px #ecc30d;
+  border-radius: 10px;
+}
+.contact .contactinfo .contactform input {
+  width: 95%;
+  height: 50px;
+  font-size: 0.9rem;
+  padding-left: 15px;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+.contact .contactinfo .contactform .send {
+  background-color: #ecc30d;
+  color: black;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 45px 0;
+}
+footer .fotinfo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .fotinfo .list1 {
+  margin-top: 15px;
+}
+footer .fotinfo .list1,
+footer .fotinfo .list2 {
+  width: 48%;
+  margin-bottom: 30px;
+}
+footer .fotinfo .list1 ul li {
+  font-size: 1.1rem;
+  padding-bottom: 15px;
+}
+footer .fotinfo .list2 ul li {
+  padding-bottom: 20px;
+}
+footer a {
+  color: #fff;
+}
+footer .fotinfo .list2 ul li a {
+  display: flex;
+  align-items: center;
+}
+footer .fotinfo .list2 ul li img {
+  width: 20px;
+  display: inline-block;
+  margin-right: 7px;
+}
+footer .fotinfo .list3 {
+  width: 67%;
+}
+footer .fotinfo .list3 img {
+  width: 50px;
+  height: 30px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+footer .fotinfo .list3 input {
+  width: 94%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 35px;
+}
+footer .fotinfo .list3 .btn {
+  padding: 14px 22px;
+}
+
+@media (min-width: 576px) {
+  nav .menu img {
+    width: 50px;
+  }
+  .contact .contactinfo .contactform {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .fotinfo .list3 input {
+    width: 93%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  nav .menu img,
+  .quality .qualityinfo,
+  .fig .visit,
+  .models .modelsinfo,
+  .arrivalsinfo,
+  .order .orderinfo,
+  .achieve .achieveinfo,
+  .contact .contactinfo,
+  footer .fotinfo {
+    width: 720px;
+  }
+  nav .icon {
+    margin-left: 20px;
+  }
+  nav .menu img {
+    width: 50px;
+  }
+  nav .menu img {
+    display: none;
+  }
+  nav .menu .flix ul {
+    display: block;
+    display: flex;
+    margin-right: 10px;
+  }
+  nav .menu .flix ul li a {
+    color: #fff;
+    margin-right: 20px;
+    text-transform: capitalize;
+  }
+  .arrivalsinfo .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .arrivalsinfo .cards img {
+    width: 48%;
+  }
+  .achieveinfo .tower .numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .achieveinfo .tower .numbers .num1 {
+    width: 49%;
+  }
+  .contact .contactinfo .contactform {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .fotinfo .list3 input {
+    width: 68%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .quality .qualityinfo,
+  .models .modelsinfo,
+  .arrivalsinfo,
+  .order .orderinfo,
+  .achieve .achieveinfo,
+  .contact .contactinfo,
+  footer .fotinfo {
+    width: 940px;
+  }
+  nav .menu img {
+    display: none;
+  }
+  nav .menu .flix ul {
+    display: block;
+    display: flex;
+    margin-right: 30px;
+  }
+  nav .menu .flix ul li a {
+    color: #fff;
+    margin-right: 45px;
+    text-transform: capitalize;
+  }
+  nav .icon {
+    margin-left: 55px;
+  }
+  .fig .visit {
+    width: 940px;
+  }
+  .models .modelsinfo figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .models .modelsinfo figure .card {
+    width: 48%;
+  }
+  .arrivalsinfo .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .arrivalsinfo .cards img {
+    width: 32%;
+  }
+  .order .orderinfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .order .orderinfo {
+    text-align: left;
+  }
+  .achieveinfo .tower {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .achieveinfo .tower .imgo,
+  .achieveinfo .tower .numbers {
+    width: 49%;
+  }
+  .achieveinfo .heading2 {
+    text-align: left;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contact .contactinfo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact .contactinfo .contactus {
+    width: 47%;
+    text-align: left;
+  }
+  .contact .contactinfo .contactform {
+    width: 49%;
+  }
+  footer .fotinfo .list1,
+  footer .fotinfo .list2 {
+    width: 31%;
+  }
+  footer .fotinfo .list3 {
+    width: 32%;
+  }
+  footer .fotinfo .list3 {
+    margin-top: -30px;
+  }
+  footer .fotinfo .list3 input {
+    width: 95%;
+  }
+  footer .fotinfo .list3 img {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .models .modelsinfo,
+  .quality .qualityinfo,
+  .fig .visit,
+  .arrivalsinfo,
+  .order .orderinfo,
+  .achieve .achieveinfo,
+  .contact .contactinfo,
+  footer .fotinfo {
+    width: 1140px;
+  }
+  nav .menu .flix ul {
+    margin-right: 60px;
+  }
+  nav .menu .flix ul li a {
+    margin-right: 55px;
+  }
+  nav .icon {
+    margin-left: 95px;
+    font-size: 1.1rem;
+  }
+  .models .modelsinfo figure .card {
+    width: 32%;
+  }
+  .arrivalsinfo .cards img {
+    width: 24%;
+  }
+  .contact .contactinfo .contactus {
+    width: 65%;
+    text-align: left;
+  }
+  .contact .contactinfo .contactform {
+    width: 30%;
+  }
+  footer .fotinfo .list3 img {
+    margin-right: 10px;
+  }
+  footer .fotinfo .list3 {
+    width: 30%;
+  }
+  footer .fotinfo .list2,
+  footer .fotinfo .list1 {
+    width: 31%;
+  }
+  footer .fotinfo .list3 input {
+    width: 90%;
+  }
+}
